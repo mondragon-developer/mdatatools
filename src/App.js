@@ -1,4 +1,4 @@
-//import profmondragon from './profmondragon.jpg';
+import profImage from './images/profmondragon.jpg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -21,34 +21,27 @@ function App() {
       <nav>
         <ul>
           <li> <Link to = "/">Home</Link></li>
-          <li> <Link to = "/sta">Statistic</Link></li>
+          <li> <Link to = "/sta">Statistics</Link></li>
           <li> <Link to = "/alg">Algebra</Link></li>
         </ul>
       </nav>
       <Routes>
         <Route path = "/alg" element={<Alg />}>
-          
         </Route>
         <Route path = "/sta" element={<Sta />}>
-        
         </Route>
         <Route path = "/" element={<Home />}>
-          
         </Route>
       </Routes>
     </Router>
         
       <h2>About Data Science Tools</h2>  
       <p>
-        I do not own, have rights or do maintenance on any of these websites, this is just a webpage that consolidates all the links from different webpages.
+      This website consolidates links to various web tools useful for students in statistics classes. I do not own, have rights to, or maintain any of these sites. Use of these resources is at your own risk, and I am not responsible for their use or misuse..
       </p>
-      <p>
-        There is no responsability for the use or missuse of any of these resources.
-      </p>
-
-      
+            
       <footer>
-      <img src="profmondragon.jpg" alt="Profile picture" className="footer-image" ></img>
+      <img src= { profImage } alt = "Profile picture" className = "footer-image" ></img>
         &copy; Copyright 2024 Msc Jose R Mondragon
       </footer>
       </div>
