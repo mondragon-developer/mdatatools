@@ -1,7 +1,6 @@
 {
   "name": "mdatatools",
   "version": "0.1.0",
-  "homepage": "https://mondragon-developer.github.io/mdatatools",
   "private": true,
   "homepage": "https://mondragon-developer.github.io/mdatatools/",
   "dependencies": {
