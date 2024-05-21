@@ -97,7 +97,7 @@
                 height:60px;            
               }
 
-              .footer-image {
+      .footer-image {
                 width: 100px;  
                 height: auto; 
                 position: relative; 
@@ -105,13 +105,78 @@
                 right: 5px;   
               }
 
-              .bolder {
+      .bolder {
                 width: 10%;
                 text-align: center;
                 vertical-align: middle;
               }
- 
-    </style>
+
+      .feedback-form {
+                max-width: 300px;  /* Reduced maximum width */
+                margin: 20px  auto;  /* Margin at the top and bottom, align to the right */
+                padding: 15px;  /* Reduced padding */
+                border: 1px solid #ccc;
+                border-radius: 8px;  /* Slightly more rounded corners */
+                background-color: #f9f9f9;
+                text-align: left;  /* Align text inside the form to the left */
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+              }
+
+      .feedback-form h2 {
+                margin-bottom: 10px;
+                font-size: 1.2rem;  /* Slightly smaller font size */
+                color: #333;  /* Dark gray color for the title */
+                text-align: center;  /* Center align the title */
+              }
+
+      .feedback-form .form-group {
+                margin-bottom: 10px;
+              }
+
+      .feedback-form label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;  /* Bold font for labels */
+              }
+
+      .feedback-form input,
+      .feedback-form textarea {
+                width: 95%;  /* Full width for inputs and textarea */
+                padding: 8px;  /* Reduced padding */
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                font-size: 0.875rem;  /* Smaller font size */
+              }
+
+      .feedback-form textarea {
+                resize: vertical;  /* Allow vertical resizing only */
+                height: 80px;  /* Fixed height for the textarea */
+              }
+
+      .feedback-form button {
+                
+                padding: 8px 12px;  /* Reduced padding */
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: #fff;
+                cursor: pointer;
+                font-size: 0.875rem;  /* Smaller font size */
+                text-align: center;  /* Center align button text */
+              }
+
+      .feedback-form button:hover {
+                  background-color: #0056b3;
+                }
+
+      .status-message {
+                  margin-top: 10px;  /* Margin above the status message */
+                  font-size: 0.875rem;  /* Smaller font size for the status message */
+                  color: #007bff;  /* Blue text color */
+                  text-align: center;  /* Center align the status message */
+                }
+
+     </style>
   </head>
   <body>
     <div id="root"></div>
