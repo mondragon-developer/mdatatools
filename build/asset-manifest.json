@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/mdatatools/static/css/main.f855e6bc.css",
+    "main.js": "/mdatatools/static/js/main.1664e1d7.js",
+    "static/js/453.d9c9b597.chunk.js": "/mdatatools/static/js/453.d9c9b597.chunk.js",
+    "static/media/image.png": "/mdatatools/static/media/image.dd026df1e8bde280e439.png",
+    "static/media/statistics.png": "/mdatatools/static/media/statistics.47d3a6d49f1286d53435.png",
+    "static/media/profmondragon.jpg": "/mdatatools/static/media/profmondragon.c793c79e6d0b4c92d433.jpg",
+    "index.html": "/mdatatools/index.html",
+    "main.f855e6bc.css.map": "/mdatatools/static/css/main.f855e6bc.css.map",
+    "main.1664e1d7.js.map": "/mdatatools/static/js/main.1664e1d7.js.map",
+    "453.d9c9b597.chunk.js.map": "/mdatatools/static/js/453.d9c9b597.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.1664e1d7.js"
+  ]
+}
