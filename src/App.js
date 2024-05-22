@@ -1,4 +1,5 @@
 import profImage from './images/profmondragon.jpg';
+import FeedbackForm from "./FeedbackForm";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -12,7 +13,7 @@ import Alg from "./Alg";
 
 function App() {
   return (
-    <div class="content">
+    <div className="content">
       <header> 
       <h1>Data Science Tools   </h1>
       </header>
@@ -30,11 +31,13 @@ function App() {
         </Route>
         <Route path = "/sta" element={<Sta />}>
         </Route>
-        <Route path = "/" element={<Home />}>
+        <Route path = "/mdatatools" element={<Home />}>
+        </Route>
+        <Route path="/" element={<Home />}>  
         </Route>
       </Routes>
     </Router>
-        
+
       <h2>About Data Science Tools</h2>  
       <p>
       This website consolidates links to various web tools useful for students in statistics classes. I do not own, have rights to, or maintain any of these sites. Use of these resources is at your own risk, and I am not responsible for their use or misuse..
