@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import staImage from "./images/statistics.png"
 import PdfLinks from './PdfLinks';
+import StatisticsCalculator from './StatisticsCalculator';
 
 class Sta extends Component {
     render() {
@@ -43,7 +44,10 @@ class Sta extends Component {
                   </p>
                   <section>
                     <PdfLinks />
-                  </section>   
+                  </section>
+                  <section>
+                  <StatisticsCalculator />
+                  </section>
              </div>
               );
         }
