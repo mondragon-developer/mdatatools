@@ -1,5 +1,4 @@
 import profImage from './images/profmondragon.jpg';
-import FeedbackForm from "./FeedbackForm";
 import './App.css';
 import {
   BrowserRouter as Router,
