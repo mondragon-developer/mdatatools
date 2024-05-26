@@ -40,7 +40,7 @@ function App() {
 
       <h2>About Data Science Tools</h2>  
       <p>
-      This website consolidates links to various web tools useful for students in statistics classes. I do not own, have rights to, or maintain any of these sites. Use of these resources is at your own risk, and I am not responsible for their use or misuse..
+      This website consolidates links to various web tools useful for students in statistics classes. I do not own, have rights to, or maintain any of these sites. Use of these resources is at your own risk, and I am not responsible for their use or misuse.
       </p>
             
       <footer>
