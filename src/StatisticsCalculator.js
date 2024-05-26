@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 
 const StatisticsCalculator = () => {
+    // State hooks for managing the input and result
     const [input, setInput] = useState('');
     const [result, setResult] = useState({});
 
     const calculateStatistics = () => {
+        // Split the input string into an array of numbers
         const numbers = input.trim().split(' ').map(Number);
         if (numbers.length > 100) {
             alert('Please enter no more than 100 numbers.');
+            return;
+        }
+
+        if (numbers.length === 0 || numbers.some(isNaN)) {
+            alert('Please enter valid numbers separated by spaces.');
             return;
         }
 
@@ -24,8 +31,9 @@ const StatisticsCalculator = () => {
         const outlierMin = q1 - 1.5 * iqr;
         const outlierMax = q3 + 1.5 * iqr;
 
-        setResult({ min, max, range, mean, median, stdDev, variance, q1, q3, iqr, outlierMin, outlierMax });
-        setResult(formatResult(result));
+        // Update the result state with formatted values (4 decimals)
+        const rawResult = ({ min, max, range, mean, median, stdDev, variance, q1, q3, iqr, outlierMin, outlierMax });
+        setResult(formatResult(rawResult));
     };
 
     const calculateMedian = (numbers) => {
@@ -45,6 +53,7 @@ const StatisticsCalculator = () => {
         return numbers[lower] * (1 - weight) + numbers[upper] * weight;
     };
 
+    // Function to format the result with four decimal places
     const formatResult = (result) => {
         const formattedResult = {};
         for (const key in result) {

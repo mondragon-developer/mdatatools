@@ -11,7 +11,7 @@ const FeedbackForm = () => {
     const formData = new FormData();
     formData.append('email', email);
     formData.append('message', message);
-    formData.append('access_key', 'fb87a7d4-5bb1-4b37-ad82-573c7bd5428e');
+    formData.append('access_key', process.env.REACT_APP_WEB3FORMS_ACCESS_KEY);
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
