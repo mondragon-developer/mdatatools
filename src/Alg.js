@@ -1,13 +1,10 @@
 import React, { Component } from "react";
-import algImage from "./images/image.png"
 
 class Alg extends Component {
     render() {
         return(
         <div>
-            <div class="sideImage">
-              <img src= { algImage } alt="Logo of algebra" className = "logo" ></img>
-            </div>
+             <div class="sideImage">A</div>
           <h1>College Algebra Class Tools</h1>
                            
         <h2>Online Calculator and Web Apps</h2> 

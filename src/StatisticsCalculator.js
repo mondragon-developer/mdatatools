@@ -65,10 +65,13 @@ const StatisticsCalculator = () => {
     };
 
     return (
+        <div>
+             <h2>Local Tools</h2>
         <div className="calculator-container">
             <h2>Statistics Calculator</h2>
             <p className="instructions">
-                Please enter up to 100 numbers separated by spaces. Example: 1 2 3 4 5
+            In order to calculate the mean, standard deviation, quartiles, and other values,
+            please enter up to 100 numbers separated by spaces. Example: 3 12 23 17...
             </p>
             <div className="input-container">
             <textarea
@@ -95,11 +98,12 @@ const StatisticsCalculator = () => {
                     <p>Q1: {result.q1}</p>
                     <p>Q3: {result.q3}</p>
                     <p>IQR: {result.iqr}</p>
-                    <p>OutlierMin: Q1 - 1.5 * iqr = {result.outlierMin}</p>
-                    <p>OutlierMax: Q3 + 1.5 * iqr = {result.outlierMax}</p>
+                    <p>OutlierMin: Q1 - 1.5 * IQR = {result.outlierMin}</p>
+                    <p>OutlierMax: Q3 + 1.5 * IQR = {result.outlierMax}</p>
                     </div>
                 </div>
             )}
+        </div>
         </div>
     );
 };

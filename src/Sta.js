@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import staImage from "./images/statistics.png";
 import PdfLinks from "./PdfLinks";
 import StatisticsCalculator from "./StatisticsCalculator";
 
@@ -7,9 +6,7 @@ class Sta extends Component {
   render() {
     return (
       <div>
-        <div class="sideImage">
-          <img src={staImage} alt="Logo of statistics" className="logo"></img>
-        </div>
+        <div class="sideImage">S</div>
         <h1>Statistics Class Tools</h1>
 
         <h2>Online Calculator and Web Apps</h2>
