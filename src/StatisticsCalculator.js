@@ -105,6 +105,7 @@ const StatisticsCalculator = () => {
             )}
         </div>
         </div>
+
     );
 };
 

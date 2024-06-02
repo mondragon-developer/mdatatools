@@ -6,11 +6,11 @@ class Sta extends Component {
   render() {
     return (
       <div>
-        <div class="sideImage">S</div>
+        <div className="sideImage">S</div>
         <h1>Statistics Class Tools</h1>
 
         <h2>Online Calculator and Web Apps</h2>
-        <p>
+        <div className="table-container">
           <table>
             <thead>
               <tr>
@@ -29,7 +29,7 @@ class Sta extends Component {
                     Calculator 1
                   </a>
                 </td>
-                <td>
+                <td className="description">
                   {" "}
                   Frequency distribution calculator to identify the class
                   interval (or width) and generate a grouped frequency table to
@@ -46,7 +46,7 @@ class Sta extends Component {
                     Calculator 2
                   </a>
                 </td>
-                <td>
+                <td className="description">
                   {" "}
                   Mean, Median, Variance, Standard Deviation Calculator with
                   Steps.
@@ -62,7 +62,7 @@ class Sta extends Component {
                     Calculator 3
                   </a>
                 </td>
-                <td>
+                <td className="description">
                   {" "}
                   Use this calculator to compute the z-score of a normal
                   distribution.
@@ -78,16 +78,67 @@ class Sta extends Component {
                     Calculator 4{" "}
                   </a>
                 </td>
-                <td>
+                <td className="description">
                   {" "}
                   Distribution calculator for the following distributions:
                   Normal, Binomial, Student's t, F, Chi-Square, Poisson,
                   Weibull, Exponential, and Uniform.
                 </td>
               </tr>
+              <tr>
+                <td className="bolder">
+                  <a
+                    href="https://www.analyticscalculators.com/calculator.aspx?id=96"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Calculator 5
+                  </a>
+                </td>
+                <td className="description">
+                  {" "}
+                  Compute the 90%, 95%, and 99% confidence intervals for the
+                  mean of a normal population, given the sample standard
+                  deviation, the sample mean, and the sample size.
+                </td>
+              </tr>
+              <tr>
+                <td className="bolder">
+                  <a
+                    href="https://www.analyticscalculators.com/calculator.aspx?id=95"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Calculator 6
+                  </a>
+                </td>
+                <td className="description">
+                  {" "}
+                  Compute the 90%, 95%, and 99% confidence intervals for the
+                  mean of a normal population
+                  <b> when the population standard deviation is known</b>, given
+                  the population standard deviation, the sample mean, and the
+                  sample size.
+                </td>
+              </tr>
+              <tr>
+                <td className="bolder">
+                  <a
+                    href="https://365datascience.com/calculators/hypothesis-test-calculator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Calculator 7
+                  </a>
+                </td>
+                <td className="description">
+                  {" "}
+                  Hypothesis Test Calculator (Single Population)
+                </td>
+              </tr>
             </tbody>
           </table>
-        </p>
+        </div>
         <section>
           <PdfLinks />
         </section>

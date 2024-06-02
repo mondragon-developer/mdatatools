@@ -4,268 +4,303 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Science Tools</title>
-    <link rel="icon" type="image/x-icon" sizes="16x16" href="%PUBLIC_URL%/circle-m.ico">
-    <title>
-      Data Science Tools
-    </title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16"
+      href="%PUBLIC_URL%/circle-m.ico"
+    />
+    <title>Data Science Tools</title>
     <style>
+      body {
+        background-image: url("%PUBLIC_URL%/background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-      body  { background-image: url("%PUBLIC_URL%/background.png");
-              background-repeat:no-repeat;
-              background-size: cover;
-              font-family: Arial, Helvetica, sans-serif;
-              }
+      footer {
+        background-color: navy;
+        color: white;
+        font-family: verdana;
+        font-size: smaller;
+        font-style: italic;
+        margin: 20px;
+        padding: 20px;
+      }
 
-      footer  { background-color: navy;
-                color: white;
-                font-family: verdana; 
-                font-size: smaller;
-                font-style: italic;
-                margin: 20px;
-                padding: 20px;
-              }
-              
-      header  { background-color:#f9f7fc;
-                border: 25px solid navy;
-                font-size: 130%;
-                font-weight: bold;
-                margin-top: 35px;
-                padding: 5px;
-                text-align: center;
-              }
-              
-      h1    { color: navy;
-              font-family: verdana;
-              text-align: center;
-            }
-            
-      h2   {color: #535150;
-            font-family: verdana;
-           }
-           
-      li  { color: #f2ebeb;
-            display: block;
-            float: left;
-            padding: 15px; 
-          }
-      li a {color: white;
-            font-weight: bold;
-            text-align: center;
-            text-decoration: none;            
-          }  
-      li a:hover { color: #e08b22;
-                 }
-          
-      nav { position: absolute;
-            left: 148px;
-            top: 35px;
-          }
-      ul {  background-color: navy;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-         }
+      header {
+        background-color: #f9f7fc;
+        border: 25px solid navy;
+        font-size: 130%;
+        font-weight: bold;
+        margin-top: 35px;
+        padding: 5px;
+        text-align: center;
+      }
 
-            
-      .content{ background-color: #f7f8fa; 
-                margin-left: 120px;
-                margin-right: 120px;
-                margin-top: 20px;
-                padding: 20px;
-                
-              }
-      
-      .center { display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 200px;
-              }
-              
-      .right  { float: right;
-                margin-left: 40px;
-                margin-right: 40px;
-                width: 200px;
-              } 
-              
-      .round  { border: 5px solid navy;
-                border-radius: 50%;
-                padding: 10px;
-              }
-              
-      .logo   { left: 10px;
-                padding-top: 10px;
-                position:fixed;
-                top: 10px;
-                width: 90px;
-                height:60px;            
-              }
+      h1 {
+        color: navy;
+        font-family: verdana;
+        text-align: center;
+      }
+
+      h2 {
+        color: #535150;
+        font-family: verdana;
+      }
+
+      li {
+        color: #f2ebeb;
+        display: block;
+        float: left;
+        padding: 15px;
+      }
+      li a {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+      }
+      li a:hover {
+        color: #e08b22;
+      }
+
+      nav {
+        position: absolute;
+        left: 148px;
+        top: 35px;
+      }
+      ul {
+        background-color: navy;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .content {
+        background-color: #f7f8fa;
+        margin-left: 120px;
+        margin-right: 120px;
+        margin-top: 20px;
+        padding: 20px;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+      }
+
+      .right {
+        float: right;
+        margin-left: 40px;
+        margin-right: 40px;
+        width: 200px;
+      }
+
+      .round {
+        border: 5px solid navy;
+        border-radius: 50%;
+        padding: 10px;
+      }
+
+      .logo {
+        left: 10px;
+        padding-top: 10px;
+        position: fixed;
+        top: 10px;
+        width: 90px;
+        height: 60px;
+      }
 
       .footer-image {
-                width: 100px;  
-                height: auto; 
-                position: relative; 
-                bottom: 1px;  
-                right: 5px;   
-              }
+        width: 100px;
+        height: auto;
+        position: relative;
+        bottom: 1px;
+        right: 5px;
+      }
 
       .bolder {
-                width: 10%;
-                text-align: center;
-                vertical-align: middle;
-              }
+        width: 10%;
+        text-align: center;
+        vertical-align: middle;
+      }
 
       .feedback-form {
-                max-width: 300px;  /* Reduced maximum width */
-                margin: 20px  auto;  /* Margin at the top and bottom, align to the right */
-                padding: 15px;  /* Reduced padding */
-                border: 1px solid #ccc;
-                border-radius: 8px;  /* Slightly more rounded corners */
-                background-color: #f9f9f9;
-                text-align: left;  /* Align text inside the form to the left */
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
-              }
+        max-width: 300px; /* Reduced maximum width */
+        margin: 20px auto; /* Margin at the top and bottom, align to the right */
+        padding: 15px; /* Reduced padding */
+        border: 1px solid #ccc;
+        border-radius: 8px; /* Slightly more rounded corners */
+        background-color: #f9f9f9;
+        text-align: left; /* Align text inside the form to the left */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+      }
 
       .feedback-form h2 {
-                margin-bottom: 10px;
-                font-size: 1.2rem;  /* Slightly smaller font size */
-                color: #333;  /* Dark gray color for the title */
-                text-align: center;  /* Center align the title */
-              }
+        margin-bottom: 10px;
+        font-size: 1.2rem; /* Slightly smaller font size */
+        color: #333; /* Dark gray color for the title */
+        text-align: center; /* Center align the title */
+      }
 
       .feedback-form .form-group {
-                margin-bottom: 10px;
-              }
+        margin-bottom: 10px;
+      }
 
       .feedback-form label {
-                display: block;
-                margin-bottom: 5px;
-                font-weight: bold;  /* Bold font for labels */
-              }
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold; /* Bold font for labels */
+      }
 
       .feedback-form input,
       .feedback-form textarea {
-                width: 95%;  /* Full width for inputs and textarea */
-                padding: 8px;  /* Reduced padding */
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                font-size: 0.875rem;  /* Smaller font size */
-              }
+        width: 95%; /* Full width for inputs and textarea */
+        padding: 8px; /* Reduced padding */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 0.875rem; /* Smaller font size */
+      }
 
       .feedback-form textarea {
-                resize: vertical;  /* Allow vertical resizing only */
-                height: 80px;  /* Fixed height for the textarea */
-              }
+        resize: vertical; /* Allow vertical resizing only */
+        height: 80px; /* Fixed height for the textarea */
+      }
 
       .feedback-form button {
-                
-                padding: 8px 12px;  /* Reduced padding */
-                border: none;
-                border-radius: 5px;
-                background-color: #007bff;
-                color: #fff;
-                cursor: pointer;
-                font-size: 0.875rem;  /* Smaller font size */
-                text-align: center;  /* Center align button text */
-              }
+        padding: 8px 12px; /* Reduced padding */
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        font-size: 0.875rem; /* Smaller font size */
+        text-align: center; /* Center align button text */
+      }
 
       .feedback-form button:hover {
-                  background-color: #0056b3;
-                }
+        background-color: #0056b3;
+      }
 
       .status-message {
-                  margin-top: 10px;  /* Margin above the status message */
-                  font-size: 0.875rem;  /* Smaller font size for the status message */
-                  color: #007bff;  /* Blue text color */
-                  text-align: center;  /* Center align the status message */
-                }
+        margin-top: 10px; /* Margin above the status message */
+        font-size: 0.875rem; /* Smaller font size for the status message */
+        color: #007bff; /* Blue text color */
+        text-align: center; /* Center align the status message */
+      }
 
-     
       .calculator-container {
-                  background-color: #ffffff;
-                  border: 1px solid #00008B;
-                  padding: 20px;
-                  border-radius: 8px;
-                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                  width: 60%;
-                  margin: 0 auto;
-                  text-align: center;
-                }
+        background-color: #ffffff;
+        border: 1px solid #00008b;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+      }
 
       h2 {
-              color: #00008B;
-          }
+        color: #00008b;
+      }
 
       textarea {
-          width: 80%;
-          padding: 10px;
-          margin-bottom: 10px;
-          border: 1px solid #00008B;
-          border-radius: 4px;
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #00008b;
+        border-radius: 4px;
       }
 
       button {
-          background-color: #00008B;
-          color: #ffffff;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 4px;
-          cursor: pointer;
-          font-size: 16px;
+        background-color: #00008b;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
       }
 
       button:hover {
-          background-color: #000066;
+        background-color: #000066;
       }
 
       .results {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 20px;
-          text-align: left;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        text-align: left;
       }
 
       .results p {
-          color: #00008B;
-          font-size: 14px;
+        color: #00008b;
+        font-size: 14px;
       }
 
       .column {
-          width: 45%;
+        width: 45%;
       }
 
       .input-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .sideImage {
-          font-size: 50px; 
-          color: navy; 
-          font-weight: bold; 
-          display: inline-block; 
-          animation: rotateY 2s infinite linear; 
-          position: fixed; /* Adjust position as needed when scrolling up or down*/
-          top: 10px;
-          right: 10px; 
-          left: 10px;
-          padding-top: 10px;
-          width: 90px;
-          height:60px;          
+        font-size: 50px;
+        color: navy;
+        font-weight: bold;
+        display: inline-block;
+        animation: rotateY 3s infinite linear;
+        position: fixed; /* Adjust position as needed when scrolling up or down*/
+        top: 10px;
+        right: 10px;
+        left: 10px;
+        padding-top: 10px;
+        width: 90px;
+        height: 60px;
+      }
+
+      @keyframes rotateY {
+        from {
+          transform: rotateY(0deg);
         }
+        to {
+          transform: rotateY(360deg);
+        }
+      }
 
-@keyframes rotateY {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
-  }
-}
+      .table-container {
+        width: 100%;
+      }
 
+      .table-container th,
+      .table-container td {
+        padding: 6px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
 
-     </style>
+      .table-container th {
+        background-color: #f2f2f2;
+      }
+
+      .table-container td {
+        vertical-align: top;
+      }
+
+      .table-container td.description {
+        text-align: center;
+      }
+     
+    </style>
   </head>
   <body>
     <!--Here will be rendered the React app-->
