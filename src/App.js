@@ -10,13 +10,14 @@ import Home from "./Home";
 import Sta from "./Sta";
 import Alg from "./Alg";
 
+
 function App() {
   return (
     <div className="content">
       <header> 
       <h1>Data Science Tools   </h1>
       </header>
-      
+            
     <Router>
       <nav>
         <ul>

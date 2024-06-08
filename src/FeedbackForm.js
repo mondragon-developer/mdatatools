@@ -1,34 +1,34 @@
 import React, { useState } from "react";
 
 const FeedbackForm = () => {
-  const [message, setMessage] = useState('');
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState('');
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData();
-    formData.append('email', email);
-    formData.append('message', message);
-    formData.append('access_key', process.env.REACT_APP_WEB3FORMS_ACCESS_KEY);
+    formData.append("email", email);
+    formData.append("message", message);
+    formData.append("access_key", process.env.REACT_APP_WEB3FORMS_ACCESS_KEY);
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
         body: formData,
       });
 
       if (response.ok) {
-        setStatus('Thank you for your feedback!');
-        setMessage('');
-        setEmail('');
+        setStatus("Thank you for your feedback!");
+        setMessage("");
+        setEmail("");
       } else {
-        setStatus('Failed to send feedback. Please try again.');
+        setStatus("Failed to send feedback. Please try again.");
       }
     } catch (error) {
-      console.error('Error sending feedback:', error);
-      setStatus('An error occurred while sending feedback. Please try again.');
+      console.error("Error sending feedback:", error);
+      setStatus("An error occurred while sending feedback. Please try again.");
     }
   };
 
@@ -56,7 +56,9 @@ const FeedbackForm = () => {
           required
         />
       </div>
-      <button type="submit" className="btn-submit">Submit</button>
+      <button type="submit" className="btn-submit">
+        Submit
+      </button>
       {status && <p>{status}</p>}
     </form>
   );
