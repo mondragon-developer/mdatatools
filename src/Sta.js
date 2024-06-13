@@ -206,7 +206,7 @@ class Sta extends Component {
               <tr>
                 <td className="bolder">
                   <a
-                    href="https://www.statskingdom.com/linear-regression-calculator.html"
+                    href="https://mathcracker.com/linear-regression?"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -221,7 +221,7 @@ class Sta extends Component {
               <tr>
                 <td className="bolder">
                   <a
-                    href="https://mathcracker.com/linear-regression?"
+                    href="https://mathcracker.com/prediction-interval-calculator-regression-prediction#results"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
