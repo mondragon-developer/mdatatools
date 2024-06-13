@@ -215,14 +215,13 @@ class Sta extends Component {
                 </td>
                 <td className="description">
                   {" "}
-                  Linear regression calculator and prediction interval
-                  calculator with step-by-step solution.
+                  Linear regression calculator
                 </td>
               </tr>
               <tr>
                 <td className="bolder">
                   <a
-                    href="https://mathcracker.com/prediction-interval-calculator-regression-prediction#results"
+                    href="https://mathcracker.com/linear-regression?"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
