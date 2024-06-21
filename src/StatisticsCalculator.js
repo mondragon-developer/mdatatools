@@ -23,7 +23,7 @@ const StatisticsCalculator = () => {
     const mean = numbers.reduce((a, b) => a + b, 0) / numbers.length;
     const median = calculateMedian(numbers);
     const variance =
-      numbers.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / numbers.length;
+      numbers.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / (numbers.length - 1);
     const stdDev = Math.sqrt(variance);
     const q1 = calculatePercentile(numbers, 0.25);
     const q3 = calculatePercentile(numbers, 0.75);
@@ -110,7 +110,7 @@ const StatisticsCalculator = () => {
               <p>Variance: {result.variance}</p>
             </div>
             <div className="column">
-              <p>Standard Deviation: {result.stdDev}</p>
+              <p>Sample Standard Deviation: {result.stdDev}</p>
               <p>Q1: {result.q1}</p>
               <p>Q3: {result.q3}</p>
               <p>IQR: {result.iqr}</p>
