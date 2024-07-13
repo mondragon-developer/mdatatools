@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import InfoIcon from "./InfoIcon";
 
 const StatisticsCalculator = () => {
   // State hooks for managing the input and result
@@ -23,7 +24,8 @@ const StatisticsCalculator = () => {
     const mean = numbers.reduce((a, b) => a + b, 0) / numbers.length;
     const median = calculateMedian(numbers);
     const variance =
-      numbers.reduce((a, b) => a + Math.pow(b - mean, 2), 0) / (numbers.length - 1);
+      numbers.reduce((a, b) => a + Math.pow(b - mean, 2), 0) /
+      (numbers.length - 1);
     const stdDev = Math.sqrt(variance);
     const q1 = calculatePercentile(numbers, 0.25);
     const q3 = calculatePercentile(numbers, 0.75);
@@ -102,20 +104,20 @@ const StatisticsCalculator = () => {
         {result.mean !== undefined && (
           <div className="results">
             <div className="column">
-              <p>Min: {result.min}</p>
-              <p>Max: {result.max}</p>
-              <p>Range: {result.range}</p>
-              <p>Mean: {result.mean}</p>
-              <p>Median: {result.median}</p>
-              <p>Variance: {result.variance}</p>
+              <p>Min: {result.min} <InfoIcon info="The minimum value in the dataset." /></p>
+              <p>Max: {result.max} <InfoIcon info="The maximum value in the dataset." /></p>
+              <p>Range: {result.range} <InfoIcon info="The difference between the maximum and minimum values." /></p>
+              <p>Mean: {result.mean} <InfoIcon info="A measure of central tendency, calculated by dividing the sum of all values by the number of values." /></p>
+              <p>Median: {result.median} <InfoIcon info="The middle value in a dataset, when the values are arranged in ascending or descending order." /></p>
+              <p>Variance: {result.variance} <InfoIcon info="A measure of how much the values in the dataset vary from the mean." /></p>
             </div>
             <div className="column">
-              <p>Sample Standard Deviation: {result.stdDev}</p>
-              <p>Q1: {result.q1}</p>
-              <p>Q3: {result.q3}</p>
-              <p>IQR: {result.iqr}</p>
-              <p>OutlierMin: Q1 - 1.5 * IQR = {result.outlierMin}</p>
-              <p>OutlierMax: Q3 + 1.5 * IQR = {result.outlierMax}</p>
+              <p>Sample Standard Deviation: {result.stdDev} <InfoIcon info="The standard deviation of the sample, a measure of the amount of variation or dispersion in the dataset." /></p>
+              <p>Q1: {result.q1} <InfoIcon info="The first quartile, the value that separates the lowest 25% of the dataset from the rest." /></p>
+              <p>Q3: {result.q3} <InfoIcon info="The third quartile, the value that separates the highest 25% of the dataset from the rest." /></p>
+              <p>IQR: {result.iqr} <InfoIcon info="The interquartile range, the difference between the first and third quartiles." /></p>
+              <p>OutlierMin: Q1 - 1.5 * IQR = {result.outlierMin} <InfoIcon info="The minimum value for identifying outliers. We can consider values below this as outliers." /></p>
+              <p>OutlierMax: Q3 + 1.5 * IQR = {result.outlierMax} <InfoIcon info="The maximum value for identifying outliers. We can consider values above this as outliers. " /></p>
             </div>
           </div>
         )}
