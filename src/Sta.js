@@ -206,7 +206,7 @@ class Sta extends Component {
               <tr>
                 <td className="bolder">
                   <a
-                    href="https://mathcracker.com/linear-regression?"
+                    href="https://www.mathportal.org/calculators/statistics-calculator/correlation-and-regression-calculator.php"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -215,7 +215,7 @@ class Sta extends Component {
                 </td>
                 <td className="description">
                   {" "}
-                  Linear regression calculator
+                  Correlation and Linear regression calculator
                 </td>
               </tr>
               <tr>
